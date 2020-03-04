@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context="com.mabnets.kilicom.addproduct">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+            <EditText
+                android:id="@+id/pnamep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Product name"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Category"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+            <Spinner
+                android:id="@+id/pcategoryp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Product category"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sub category"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+            <Spinner
+                android:id="@+id/psubcategoryp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Product category"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Image"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/pivp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/grey_background"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"/>
+                <ImageButton
+                    android:id="@+id/pimgbtnp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_add_a_photo_black_24dp"
+                    android:backgroundTint="#fff"
+                    android:layout_marginLeft="30dp"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+            <EditText
+                android:id="@+id/ppricep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Product Price @ each"
+                android:inputType="number"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+            <EditText
+                android:id="@+id/pdescp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/textarea"
+                android:inputType="textMultiLine"
+                android:gravity="top"
+                android:padding="5dp"
+                android:hint="Breif description about the product"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="Markets"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <Spinner
+                android:id="@+id/plocatiop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Location"/>
+            <Button
+                android:id="@+id/pbuttonp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/button_shaper"
+                android:text="Add product"
+                android:drawableStart="@drawable/ic_check_black_24dp"
+                android:textColor="#fff"
+                android:padding="10dp"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

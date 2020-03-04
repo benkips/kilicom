@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="4dp"
+    app:cardCornerRadius="10dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivfmarket"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/grey_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/vall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shaper"
+            android:drawableRight="@drawable/ic_arrow_forward_black_24dp"
+            android:padding="5dp"
+            android:text="View all"
+            android:textColor="#fff"
+            app:layout_constraintBottom_toTopOf="@+id/ivfmarket"
+            app:layout_constraintEnd_toEndOf="@+id/ivfmarket"
+            app:layout_constraintHorizontal_bias="0.049"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivfmarket"
+            app:layout_constraintVertical_bias="0.262" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/tvfmarketx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Karatina Market"
+        android:textSize="19dp"
+        android:layout_gravity="center"
+         />
+    </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

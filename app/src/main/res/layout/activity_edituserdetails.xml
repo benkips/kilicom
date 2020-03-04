@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mabnets.kilicom.Edituserdetails">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iveudpx"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/person"/>
+            <ImageButton
+                android:id="@+id/iveuploadbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_add_a_photo_black_24dp"
+                android:background="#fff"
+                android:layout_marginTop="10dp"
+                />
+            <TextView
+                android:text="Name"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/eteuname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="John Doe"/>
+            <TextView
+                android:text="Email"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/eteuemail"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:hint="Johndoe@gmail.com"/>
+            <TextView
+                android:text="Phone Number"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/eteuphone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="+254.."
+                android:inputType="phone"/>
+            <TextView
+                android:text="Location"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <Spinner
+                android:id="@+id/speulocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint=""/>
+            <TextView
+                android:text="Bio"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/eteubio"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/textarea"
+                android:inputType="textMultiLine"
+                android:gravity="top"
+                android:padding="5dp"
+                android:layout_marginTop="10dp"
+                android:hint="Bio data"/>
+            <TextView
+                android:text="Contact info"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:id="@+id/eteucont"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/textarea"
+                android:inputType="textMultiLine"
+                android:gravity="top"
+                android:padding="5dp"
+                android:layout_marginTop="10dp"
+                android:hint="Bio data"/>
+            <Button
+                android:id="@+id/btneuedit"
+                android:text="Done"
+                android:textColor="#fff"
+                android:layout_width="120dp"
+                android:paddingLeft="5dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:drawableStart="@drawable/ic_check_black_24dp"
+                android:background="@drawable/button_shaper"
+                android:layout_height="wrap_content"/>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

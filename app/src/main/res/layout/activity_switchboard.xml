@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/ban"
+
+    tools:context="com.mabnets.kilicom.switchboard">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/transparent">
+
+    <TextView
+        android:text="Hello"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#111"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"/>
+
+    <Button
+        android:id="@+id/amfarmer"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="am a farmer"
+        android:background="@drawable/button_shaper"
+        android:textColor="#fff"
+        android:layout_marginTop="10dp"/>
+    <Button
+        android:id="@+id/ambuyer"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="am a buyer"
+        android:background="@drawable/button_shaper"
+        android:textColor="#fff"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>
+</LinearLayout>

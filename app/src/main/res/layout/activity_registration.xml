@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mabnets.kilicom.Registration"
+    android:background="#fff">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="40dp"
+            android:orientation="vertical">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ivcreg"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@drawable/kilicomicon"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Farmer Registration"
+                android:textSize="17sp"
+                android:layout_marginBottom="10dp"
+                android:textAllCaps="true"/>
+            <ImageButton
+                android:id="@+id/farmer_uploadbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawablePadding="10dp"
+                android:src="@drawable/ic_add_a_photo_black_24dp"
+                android:backgroundTint="#fff"
+                />
+            <EditText
+                android:id="@+id/etrphone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittextstyle"
+                android:hint="Phone number"
+                android:inputType="phone"
+                android:drawableRight="@drawable/ic_call_black_24dp"/>
+            <EditText
+                android:id="@+id/etrfullnames"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittextstyle"
+                android:hint="Username"
+                android:inputType="textEmailAddress"
+                android:drawableRight="@drawable/ic_account_circle_black_24dp"/>
+            <EditText
+                android:id="@+id/etrpass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittextstyle"
+                android:hint="Password"
+                android:drawableRight="@drawable/ic_lock_black_24dp"
+                android:inputType="textPassword"/>
+            <EditText
+                android:id="@+id/etremail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittextstyle"
+                android:hint="Email"
+                android:drawableRight="@drawable/ic_mail_black_24dp"/>
+
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:textSize="19sp"
+                android:layout_marginTop="15dp"/>
+            <Spinner
+                android:id="@+id/spcounties"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact info"
+                android:textSize="19sp"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/etcontactinfo"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/textarea"
+                android:gravity="top"
+                android:hint="Address or another Phone"
+                android:inputType="textMultiLine"
+                android:padding="5dp"
+                android:paddingTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bio info"
+                android:textSize="19sp"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:id="@+id/etbioinfo"
+                android:inputType="textMultiLine"
+                android:layout_width="match_parent"
+                android:gravity="top"
+                android:paddingTop="10dp"
+                android:padding="5dp"
+                android:layout_height="100dp"
+                android:background="@drawable/textarea"
+                android:layout_marginTop="20dp"
+                android:hint="Describe yourself"
+                />
+
+            <Button
+                android:id="@+id/btnreg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_shaper"
+                android:text="Sign Up"
+                android:textColor="#fff"
+                android:layout_marginTop="20dp"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/loginrefz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="18sp"
+                android:text="Have an account?   Login Here"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</LinearLayout>
