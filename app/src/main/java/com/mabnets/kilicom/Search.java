@@ -107,7 +107,7 @@ public class Search extends Fragment {
         });
     }
     private  void search(String x){
-        String url="http://www.kilicom.mabnets.com/android/search.php";
+        String url="http://www.kilicom.co.ke/android/search.php";
 
         StringRequest request=new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override

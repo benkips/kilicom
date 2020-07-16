@@ -106,7 +106,7 @@ public class productview extends Fragment {
                 rmv.setBackgroundResource(R.drawable.button_shaper);
             }
 
-            ImageLoader.getInstance().displayImage("http://www.kilicom.mabnets.com/photos/" + photo, iv);
+            ImageLoader.getInstance().displayImage("http://www.kilicom.co.ke/photos/" + photo, iv);
             tvprodname.setText(name);
             tvlocation.setText(location);
             tvprice.setText("KES "+price);
@@ -145,7 +145,7 @@ public class productview extends Fragment {
     }
     private void deletepic(String d){
 
-        String url="http://www.kilicom.mabnets.com/android/deletions.php";
+        String url="http://www.kilicom.co.ke/android/deletions.php";
         StringRequest request=new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {

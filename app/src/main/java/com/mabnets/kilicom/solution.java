@@ -89,7 +89,7 @@ public class solution extends Fragment {
                 rm.setVisibility(getView().GONE);
             }
 
-            ImageLoader.getInstance().displayImage("http://www.kilicom.mabnets.com/photos/" +photo, ivsl);
+            ImageLoader.getInstance().displayImage("http://www.kilicom.co.ke/photos/" +photo, ivsl);
             tvcd.setText(details);
             tvcx.setText(crop);
             tvs.setText(solution);
@@ -106,7 +106,7 @@ public class solution extends Fragment {
     }
     private void deleteactivtypic(String d){
 
-        String url="http://www.kilicom.mabnets.com/android/deletions.php";
+        String url="http://www.kilicom.co.ke/android/deletions.php";
         StringRequest request=new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {

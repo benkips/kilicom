@@ -54,9 +54,9 @@ public class helpfarmer extends Fragment {
         Bundle bundle = getArguments();
         if (bundle != null) {
             customerphn = bundle.getString("customerphone");
-            mypage = "http://www.kilicom.mabnets.com/android/chat.php?cont="+customerphn;
+            mypage = "http://www.kilicom.co.ke/android/chat.php?cont="+customerphn;
         }else{
-            mypage = "http://www.kilicom.mabnets.com/android/chat.php?cont="+phn;
+            mypage = "http://www.kilicom.co.ke/android/chat.php?cont="+phn;
         }
 
         final String myerrorpage = "file:///android_asset/android/errorpage.html";

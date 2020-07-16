@@ -121,7 +121,7 @@ public class Diseasecapture extends AppCompatActivity {
             }else {
 
                  encodedstring= ImageBase64.encode(bitmapx);
-                String url = "http://www.kilicom.mabnets.com/android/savedisease.php";
+                String url = "http://www.kilicom.co.ke/android/savedisease.php";
                 StringRequest stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {

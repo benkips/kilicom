@@ -130,7 +130,7 @@ public class History extends Fragment {
 
     private void loadactivitydata(String d){
 
-        String url="http://www.kilicom.mabnets.com/android/history.php";
+        String url="http://www.kilicom.co.ke/android/history.php";
         StringRequest request=new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
@@ -230,7 +230,7 @@ public class History extends Fragment {
     }
     private void loadactivityhistory(String d){
 
-        String url="http://www.kilicom.mabnets.com/android/history.php";
+        String url="http://www.kilicom.co.ke/android/history.php";
         StringRequest request=new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {

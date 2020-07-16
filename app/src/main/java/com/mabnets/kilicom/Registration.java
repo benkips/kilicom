@@ -213,7 +213,7 @@ public class Registration extends AppCompatActivity {
                 return;
             } else {
 
-                String url="http://www.kilicom.mabnets.com/android/savefarmer.php";
+                String url="http://www.kilicom.co.ke/android/savefarmer.php";
                 StringRequest request=new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
@@ -299,7 +299,7 @@ public class Registration extends AppCompatActivity {
         }
     }
     private void getcounties() {
-        String url = "http://www.kilicom.mabnets.com/android/getlocations.php";
+        String url = "http://www.kilicom.co.ke/android/getlocations.php";
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {

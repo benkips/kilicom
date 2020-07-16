@@ -36,7 +36,7 @@ public class fmarketviewadapter extends RecyclerView.Adapter<fmarketviewadapter.
         holder.nmarket.setText(fmarket.market);
         holder.ncounty.setText(fmarket.county);
         holder.ndetails.setText(fmarket.details);
-        ImageLoader.getInstance().displayImage("http://www.kilicom.mabnets.com/photos/"+ fmarket.photo, holder.ivmarkt);
+        ImageLoader.getInstance().displayImage("http://www.kilicom.co.ke/photos/"+ fmarket.photo, holder.ivmarkt);
     }
 
     @Override

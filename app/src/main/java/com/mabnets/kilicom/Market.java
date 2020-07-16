@@ -49,7 +49,7 @@ public class Market extends AppCompatActivity {
         getcounties();
     }
     private void getcounties() {
-        String url = "http://www.kilicom.mabnets.com/android/getlocations.php";
+        String url = "http://www.kilicom.co.ke/android/getlocations.php";
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {

@@ -81,15 +81,15 @@ public class hometwo extends Fragment {
     }
     private void loadfmarkets(){
 
-        String url="http://www.kilicom.mabnets.com/android/getfeatured.php";
+        String url="http://www.kilicom.co.ke/android/getfeatured.php";
         StringRequest request=new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
                 /* pd.dismiss();*/
                 Log.d(Tag,response);
                 if(!response.isEmpty()){
-                    if(response.contains("None")){
-                        Toast.makeText(getContext(), response, Toast.LENGTH_SHORT).show();
+                    if(response.contains("none")){
+                        Toast.makeText(getContext(), "no markets existed", Toast.LENGTH_SHORT).show();
                     } else {
                         Log.d(Tag, response);
                         ArrayList<fmarkets> flist= new JsonConverter<fmarkets>().toArrayList(response, fmarkets.class);
@@ -171,7 +171,7 @@ public class hometwo extends Fragment {
     }
     private void loadcategory(){
 
-        String url="http://www.kilicom.mabnets.com/android/categories.php";
+        String url="http://www.kilicom.co.ke/android/categories.php";
         StringRequest request=new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
@@ -179,7 +179,7 @@ public class hometwo extends Fragment {
                 Log.d(Tag,response);
                 if(!response.isEmpty()){
                     if(response.contains("None")){
-                        Toast.makeText(getContext(), response, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getContext(), "No entries made", Toast.LENGTH_SHORT).show();
                     } else {
                         Log.d(Tag, response);
                         ArrayList<Category> categorylist= new JsonConverter<Category>().toArrayList(response, Category.class);
@@ -254,7 +254,7 @@ public class hometwo extends Fragment {
     }
     public void loadsubcategory(final String ct){
 
-        String url="http://www.kilicom.mabnets.com/android/subcategories.php";
+        String url="http://www.kilicom.co.ke/android/subcategories.php";
         StringRequest request=new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
@@ -262,7 +262,7 @@ public class hometwo extends Fragment {
                 Log.d(Tag,response);
                 if(!response.isEmpty()){
                     if(response.contains("None")){
-                        Toast.makeText(getContext(), response, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getContext(), "No entries made", Toast.LENGTH_SHORT).show();
                     } else {
                         Log.d(Tag, response);
                         ArrayList<Category> scategorylist= new JsonConverter<Category>().toArrayList(response, Category.class);

@@ -46,7 +46,7 @@ public class searchAdapter extends RecyclerView.Adapter<searchAdapter.searchHold
     @Override
     public void onBindViewHolder(searchHolder holder, int position) {
         viewdata viewdataa=(viewdata)searchlist.get(position);
-        ImageLoader.getInstance().displayImage("http://www.kilicom.mabnets.com/photos/" + viewdataa.photo, holder.ivp);
+        ImageLoader.getInstance().displayImage("http://www.kilicom.co.ke/photos/" + viewdataa.photo, holder.ivp);
         holder.tvprod.setText(viewdataa.product);
         holder.tvprice.setText("KES "+viewdataa.price);
         holder.tvplace.setText((viewdataa.location));

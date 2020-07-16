@@ -41,7 +41,7 @@ public class categoryviewadapter extends RecyclerView.Adapter<categoryviewadapte
     @Override
     public void onBindViewHolder(@NonNull categoryviewholder holder, int position) {
         viewdata viewdataa=(viewdata)viewlist.get(position);
-        ImageLoader.getInstance().displayImage("http://www.kilicom.mabnets.com/photos/" + viewdataa.photo, holder.ivp);
+        ImageLoader.getInstance().displayImage("http://www.kilicom.co.ke/photos/" + viewdataa.photo, holder.ivp);
         holder.tvprod.setText(viewdataa.product);
         holder.tvprice.setText("KES "+viewdataa.price);
         holder.tvplace.setText((viewdataa.location));

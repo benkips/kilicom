@@ -55,7 +55,7 @@ public class activityadpter extends RecyclerView.Adapter<activityadpter.activity
     if(activityz.photo.contains(".mp4")){
         holder.iva.setImageResource(R.drawable.videoicon);
     }else {
-        ImageLoader.getInstance().displayImage("http://www.kilicom.mabnets.com/photos/temp/A" + activityz.photo, holder.iva);
+        ImageLoader.getInstance().displayImage("http://www.kilicom.co.ke/photos/temp/A" + activityz.photo, holder.iva);
     }
     holder.cva.setOnClickListener(new View.OnClickListener() {
         @Override

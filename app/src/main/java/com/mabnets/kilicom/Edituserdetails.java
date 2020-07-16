@@ -147,7 +147,7 @@ public class Edituserdetails extends AppCompatActivity {
             p=title.get(5);
             c=title.get(6);
             /*Log.d(Tag, encodedstring);*/
-            com.nostra13.universalimageloader.core.ImageLoader.getInstance().displayImage("http://www.kilicom.mabnets.com/photos/" + title.get(2), dpiv);
+            com.nostra13.universalimageloader.core.ImageLoader.getInstance().displayImage("http://www.kilicom.co.ke/photos/" + title.get(2), dpiv);
 
 
 
@@ -206,7 +206,7 @@ public class Edituserdetails extends AppCompatActivity {
     }
 
     private void getlocation() {
-        String url = "http://www.kilicom.mabnets.com/android/getlocations.php";
+        String url = "http://www.kilicom.co.ke/android/getlocations.php";
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
@@ -461,7 +461,7 @@ public class Edituserdetails extends AppCompatActivity {
                 return;
             } else {
 
-                String url = "http://www.kilicom.mabnets.com/android/editfarmer.php";
+                String url = "http://www.kilicom.co.ke/android/editfarmer.php";
                 StringRequest request = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
@@ -553,7 +553,7 @@ public class Edituserdetails extends AppCompatActivity {
     }
     public void  updateprofilebay(){
 
-        String url = "http://www.kilicom.mabnets.com/android/farmerdetails.php";
+        String url = "http://www.kilicom.co.ke/android/farmerdetails.php";
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {

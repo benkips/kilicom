@@ -41,7 +41,7 @@ public class featuredmarketsadapter extends RecyclerView.Adapter<featuredmarkets
     public void onBindViewHolder(@NonNull featuredmarketsholder holder, int position) {
        fmarkets fmarket=(fmarkets)fmarketlist.get(position);
        holder.tvfm.setText(fmarket.market);
-        ImageLoader.getInstance().displayImage("http://www.kilicom.mabnets.com/photos/"+ fmarket.photo, holder.ivfm);
+        ImageLoader.getInstance().displayImage("http://www.kilicom.co.ke/photos/"+ fmarket.photo, holder.ivfm);
         holder.btnvalll.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

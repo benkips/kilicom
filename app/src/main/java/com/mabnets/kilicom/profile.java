@@ -103,7 +103,7 @@ public class profile extends Fragment {
             fbio.setText("\n"+title.get(4));
             String encodedstring=title.get(2);
             /*Log.d(Tag, encodedstring);*/
-            ImageLoader.getInstance().displayImage("http://www.kilicom.mabnets.com/photos/" + title.get(2), fpic);
+            ImageLoader.getInstance().displayImage("http://www.kilicom.co.ke/photos/" + title.get(2), fpic);
 
 
 
@@ -123,7 +123,7 @@ public class profile extends Fragment {
     }
     public void  updateprofilebay(){
 
-        String url = "http://www.kilicom.mabnets.com/android/farmerdetails.php";
+        String url = "http://www.kilicom.co.ke/android/farmerdetails.php";
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
@@ -156,7 +156,7 @@ public class profile extends Fragment {
                         fbio.setText("\n"+title.get(4));
                         String encodedstring=title.get(2);
                         /*Log.d(Tag, encodedstring);*/
-                        ImageLoader.getInstance().displayImage("http://www.kilicom.mabnets.com/photos/" + title.get(2), fpic);
+                        ImageLoader.getInstance().displayImage("http://www.kilicom.co.ke/photos/" + title.get(2), fpic);
 
 
 

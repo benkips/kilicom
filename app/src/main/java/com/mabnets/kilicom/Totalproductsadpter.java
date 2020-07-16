@@ -42,7 +42,7 @@ public class Totalproductsadpter extends RecyclerView.Adapter<Totalproductsadpte
     holder.tv1.setText(total.subcategory);
     holder.tv2.setText(total.totalproducts);
 
-    ImageLoader.getInstance().displayImage("http://www.kilicom.mabnets.com/photos/" + total.photo, holder.iv);
+    ImageLoader.getInstance().displayImage("http://www.kilicom.co.ke/photos/" + total.photo, holder.iv);
     holder.cv.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {

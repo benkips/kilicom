@@ -43,7 +43,7 @@ public class cashoutadapter extends RecyclerView.Adapter<cashoutadapter.cashouho
     @Override
     public void onBindViewHolder(@NonNull cashouholder holder, final int position) {
         final cartz cartzitemz=cartzlist.get(position);
-        ImageLoader.getInstance().displayImage("http://www.kilicom.mabnets.com/photos/"+cartzitemz.getPhoto(),holder.ivcart);
+        ImageLoader.getInstance().displayImage("http://www.kilicom.co.ke/photos/"+cartzitemz.getPhoto(),holder.ivcart);
         holder.tvcart.setText(cartzitemz.getProduct());
         holder.tvpcart.setText(cartzitemz.getPrice()+"ksh");
 

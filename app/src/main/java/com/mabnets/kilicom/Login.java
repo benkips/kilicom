@@ -120,7 +120,7 @@ public class Login extends AppCompatActivity {
                 etphone.requestFocus();
                 return;
             } else {
-                String url = "http://www.kilicom.mabnets.com/android/login.php";
+                String url = "http://www.kilicom.co.ke/android/login.php";
                 StringRequest stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {

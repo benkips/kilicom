@@ -100,7 +100,7 @@ public class Diseasevideocapture extends AppCompatActivity implements UploadStat
                     String uploadId = UUID.randomUUID().toString();
                     uploadReceiver.setUploadID(uploadId);
                    /* http://www.kilicom.mabnets.com/android/savedisease.php*/
-                    String url = "http://www.kilicom.mabnets.com/android/savedisease.php";
+                    String url = "http://www.kilicom.co.ke/android/savedisease.php";
                     //Creating a multi part request
                     new MultipartUploadRequest(this, uploadId, url)
                             .addFileToUpload(video, "video") //Adding file

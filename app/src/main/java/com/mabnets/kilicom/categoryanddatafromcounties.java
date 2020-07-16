@@ -213,7 +213,7 @@ public class categoryanddatafromcounties extends AppCompatActivity {
             alert.show();
         } else {
             rvtotal.setAdapter(null);
-            String url = "http://www.kilicom.mabnets.com/android/markets.php";
+            String url = "http://www.kilicom.co.ke/android/markets.php";
             StringRequest stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
                 @Override
                 public void onResponse(String response) {

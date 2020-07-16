@@ -84,7 +84,7 @@ public class notification extends Fragment {
     }
     public void loadnotification(final String phnn,String sttus){
 
-        String url="http://www.kilicom.mabnets.com/android/notifications.php";
+        String url="http://www.kilicom.co.ke/android/notifications.php";
         StringRequest request=new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
@@ -147,7 +147,7 @@ public class notification extends Fragment {
         mycommand.remove(request);
     }
     private  void messagechecked(String p){
-        String url="http://www.kilicom.mabnets.com/android/getprodcategory.php";
+        String url="http://www.kilicom.co.ke/android/getprodcategory.php";
         StringRequest request=new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {

@@ -104,7 +104,7 @@ public class subscriptionview extends Fragment {
     }
     private void loadsubscriptioninfo(){
 
-        String url="http://www.kilicom.mabnets.com/android/getsubscription.php";
+        String url="http://www.kilicom.co.ke/android/getsubscription.php";
         StringRequest request=new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
@@ -193,7 +193,7 @@ public class subscriptionview extends Fragment {
         mycommand.remove(request);
     }
     private void checkstatus(){
-        String url="http://www.kilicom.mabnets.com/android/getsubscription.php";
+        String url="http://www.kilicom.co.ke/android/getsubscription.php";
         StringRequest request=new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
@@ -281,7 +281,7 @@ public class subscriptionview extends Fragment {
         mycommand.remove(request);
     }
     private void setsubscriptionamount(){
-        String url="http://www.kilicom.mabnets.com/android/getsubscription.php";
+        String url="http://www.kilicom.co.ke/android/getsubscription.php";
         StringRequest request=new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {

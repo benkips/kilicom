@@ -67,7 +67,7 @@ public class fmarkertview extends Fragment {
     }
     public void loadfeaturedmrket(){
 
-        String url="http://www.kilicom.mabnets.com/android/getfeatured.php";
+        String url="http://www.kilicom.co.ke/android/getfeatured.php";
         StringRequest request=new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {

@@ -85,7 +85,7 @@ public class videosolution extends Fragment {
             String solution = bundle.getString("solution");
             String status = bundle.getString("status");
 
-            andExoPlayerView.setSource("http://kilicom.mabnets.com/photos/"+video);
+            andExoPlayerView.setSource("http://www.kilicom.co.ke/photos/"+video);
             tvcd.setText(details);
             tvcx.setText(crop);
             tvs.setText(solution);
@@ -107,7 +107,7 @@ public class videosolution extends Fragment {
     }
     private void deletevideo(String d){
 
-        String url="http://www.kilicom.mabnets.com/android/deletevideo.php";
+        String url="http://www.kilicom.co.ke/android/deletevideo.php";
         StringRequest request=new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {

@@ -114,7 +114,7 @@ public class uactivity extends Fragment {
     }
     private void loadactivitydata(String d){
 
-        String url="http://www.kilicom.mabnets.com/android/getactivity.php";
+        String url="http://www.kilicom.co.ke/android/getactivity.php";
         StringRequest request=new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {

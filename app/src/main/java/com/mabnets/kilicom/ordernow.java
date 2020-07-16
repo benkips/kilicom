@@ -181,7 +181,7 @@ public class ordernow extends Fragment {
             }else
             {
 
-                String url="http://www.kilicom.mabnets.com/android/ordersaver.php";
+                String url="http://www.kilicom.co.ke/android/ordersaver.php";
                 StringRequest request=new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
@@ -314,7 +314,7 @@ public class ordernow extends Fragment {
         return Patterns.EMAIL_ADDRESS.matcher(target).matches();
     }
     private void stkpush(String x){
-        String url="http://www.kilicom.mabnets.com/android/ordersaver.php";
+        String url="http://www.kilicom.co.ke/android/ordersaver.php";
         StringRequest request=new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {

@@ -287,7 +287,7 @@ private void permission() {
 }
 public void  updateprofilebay(){
 
-    String url = "http://www.kilicom.mabnets.com/android/farmerdetails.php";
+    String url = "http://www.kilicom.co.ke/android/farmerdetails.php";
     StringRequest stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
         @Override
         public void onResponse(String response) {
@@ -388,7 +388,7 @@ public void  updateprofilebay(){
              ppemail.setText(title.get(1));
              String encodedstring=title.get(2);
              Log.d(Tag, encodedstring);
-             ImageLoader.getInstance().displayImage("http://www.kilicom.mabnets.com/photos/" + title.get(2), ppppic,options);
+             ImageLoader.getInstance().displayImage("http://www.kilicom.co.ke/photos/" + title.get(2), ppppic,options);
 
          }catch (IOException e){
              e.printStackTrace();
@@ -410,7 +410,7 @@ public void  updateprofilebay(){
         }
     }
     private void notificationcounter(){
-        String url = "http://www.kilicom.mabnets.com/android/notifications.php";
+        String url = "http://www.kilicom.co.ke/android/notifications.php";
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
@@ -468,7 +468,7 @@ public void  updateprofilebay(){
         upp.start();
     }
     private void deactivation(){
-        String url = "http://www.kilicom.mabnets.com/android/login.php";
+        String url = "http://www.kilicom.co.ke/android/login.php";
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {

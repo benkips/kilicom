@@ -42,7 +42,7 @@ public class Subcategoryadapter  extends RecyclerView.Adapter<Subcategoryadapter
     public void onBindViewHolder(@NonNull Subcategoryholder holder, int position) {
         final Category subcategori=(Category)sublist.get(position);
         holder.tvsubz.setText(subcategori.subcategory);
-        ImageLoader.getInstance().displayImage("http://www.kilicom.mabnets.com/photos/" + subcategori.photo, holder.ivsub);
+        ImageLoader.getInstance().displayImage("http://www.kilicom.co.ke/photos/" + subcategori.photo, holder.ivsub);
         holder.cvsub.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

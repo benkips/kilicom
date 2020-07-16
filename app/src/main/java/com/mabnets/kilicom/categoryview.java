@@ -97,7 +97,7 @@ public class categoryview extends Fragment {
     }
     public void loadcategorydataas(final String ct,final String st){
 
-        String url="http://www.kilicom.mabnets.com/android/getprodcategory.php";
+        String url="http://www.kilicom.co.ke/android/getprodcategory.php";
         StringRequest request=new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
