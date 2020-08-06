@@ -17,4 +17,8 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="step1">1.Go to Lipa Na M-PESA and Select Buy Goods Enter the Till Number </string>
+    <string name="step2">2.Enter the subscription fee amount</string>
+    <string name="step3">3.Enter your M-PESA PIN </string>
+    <string name="step4">4.Confirm that all details are correct and press OK You will receive a confirmation SMS with the name "KILICOM AGRICULTURE" from M-PESA immediately</string>
 </resources>

@@ -41,6 +41,7 @@ public class Login extends AppCompatActivity {
     private EditText etpassword;
     private Button lgnbtn;
     private TextView regref;
+    private TextView lgp;
     private ProgressDialog progressDialog;
     private Mycommand mycommand;
     private Boolean checked;
@@ -57,6 +58,7 @@ public class Login extends AppCompatActivity {
         lgnbtn=(Button)findViewById(R.id.signinbtn);
         cb=(CheckBox)findViewById(R.id.cbL);
         regref=(TextView)findViewById(R.id.regreff);
+        lgp=(TextView)findViewById(R.id.lgfpass);
         detailscacher=new FileCacher<>(Login.this,"details.txt");
 
         progressDialog=new ProgressDialog(this);
@@ -73,6 +75,7 @@ public class Login extends AppCompatActivity {
             Log.d(Tag, phn);
             startActivity(new Intent(Login.this,MainActivity.class));
             Login.this.finish();
+
         }
 
         cb.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
@@ -97,6 +100,13 @@ public class Login extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(Login.this,Registration.class));
+                CustomIntent.customType(Login.this,"left-to-right");
+            }
+        });
+        lgp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Login.this,forgot_pass.class));
                 CustomIntent.customType(Login.this,"left-to-right");
             }
         });

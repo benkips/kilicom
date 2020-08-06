@@ -185,7 +185,7 @@ public class addproduct extends AppCompatActivity {
         });
     }
     private void getcategory() {
-        String url = "http://www.kilicom.mabnets.com/android/categories.php";
+        String url = "http://www.kilicom.co.ke/android/categories.php";
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
@@ -319,7 +319,7 @@ public class addproduct extends AppCompatActivity {
 
     }
     private void getsubcategory(String s) {
-        String url = "http://www.kilicom.mabnets.com/android/subcategories.php";
+        String url = "http://www.kilicom.co.ke/android/subcategories.php";
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
@@ -460,7 +460,7 @@ public class addproduct extends AppCompatActivity {
 
     }
     private void getmarket(String x) {
-        String url = "http://www.kilicom.mabnets.com/android/getmarkets.php";
+        String url = "http://www.kilicom.co.ke/android/getmarkets.php";
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
@@ -657,7 +657,7 @@ public class addproduct extends AppCompatActivity {
             Toast.makeText(addproduct.this, "please add a product picture to continue", Toast.LENGTH_SHORT).show();
 
         }else{
-            String url = "http://www.kilicom.mabnets.com/android/productsaver.php";
+            String url = "http://www.kilicom.co.ke/android/productsaver.php";
             StringRequest stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
                 @Override
                 public void onResponse(String response) {

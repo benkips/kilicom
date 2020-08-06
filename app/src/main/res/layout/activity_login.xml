@@ -95,6 +95,16 @@
         android:textSize="18sp"
         android:text="Dont Have an account? Create Here?"/>
 
+        <TextView
+            android:id="@+id/lgfpass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="right"
+            android:textSize="18sp"
+            android:textColor="@color/colorAccent"
+            android:text="I forgot my password"/>
+
 </LinearLayout>
     </ScrollView>
 </LinearLayout>
