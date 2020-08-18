@@ -1,8 +1,10 @@
 package com.mabnets.kilicom;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -164,27 +166,34 @@ public class Login extends AppCompatActivity {
 
                         if (error instanceof TimeoutError) {
                             progressDialog.dismiss();
+                            showt("please check your internet connection");
                             Toast.makeText(Login.this, "error time out ", Toast.LENGTH_SHORT).show();
                         } else if (error instanceof NoConnectionError) {
                             progressDialog.dismiss();
+                            showt("please check your internet connection");
                             Toast.makeText(Login.this, "error no connection", Toast.LENGTH_SHORT).show();
                         } else if (error instanceof NetworkError) {
                             progressDialog.dismiss();
+                            showt("please check your internet connection");
                             Toast.makeText(Login.this, "error network error", Toast.LENGTH_SHORT).show();
                         } else if (error instanceof AuthFailureError) {
                             progressDialog.dismiss();
+                            showt("please check your internet connection");
                             Toast.makeText(Login.this, "errorin Authentication", Toast.LENGTH_SHORT).show();
                         } else if (error instanceof ParseError) {
                             progressDialog.dismiss();
+                            showt("please check your internet connection");
                             Toast.makeText(Login.this, "error while parsing", Toast.LENGTH_SHORT).show();
                         } else if (error instanceof ServerError) {
                             progressDialog.dismiss();
+                            showt("please check your internet connection");
                             Toast.makeText(Login.this, "error  in server", Toast.LENGTH_SHORT).show();
                         } else if (error instanceof ClientError) {
                             progressDialog.dismiss();
                             Toast.makeText(Login.this, "error with Client", Toast.LENGTH_SHORT).show();
                         } else {
                             progressDialog.dismiss();
+                            showt("please check your internet connection");
                             Toast.makeText(Login.this, "error while loading", Toast.LENGTH_SHORT).show();
                         }
 
@@ -209,5 +218,17 @@ public class Login extends AppCompatActivity {
 
     public static boolean isphone(CharSequence target){
         return !TextUtils.isEmpty(target) && Patterns.PHONE.matcher(target).matches();
+    }
+    public void showt(String t){
+        androidx.appcompat.app.AlertDialog.Builder alert=new AlertDialog.Builder(Login.this);
+        alert.setMessage(t);
+        alert.setNeutralButton("ok", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                System.exit(0);
+            }
+        });
+        alert.setCancelable(false);
+        alert.show();
     }
 }

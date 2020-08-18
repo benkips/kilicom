@@ -211,7 +211,7 @@ public class ordernow extends Fragment {
 
                                 }
                                 if(title.get(0).equals("success")) {
-                                    stkpush(response);
+                                   // stkpush(response);
                                     AlertDialog.Builder alert = new AlertDialog.Builder(getContext());
                                     alert.setMessage("Your order has been received, Payment request has been sent to your phone");
                                     alert.setNeutralButton("ok", new DialogInterface.OnClickListener() {
